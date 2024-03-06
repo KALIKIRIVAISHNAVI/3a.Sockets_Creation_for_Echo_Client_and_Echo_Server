@@ -9,7 +9,7 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-## CLIENT
+### CLIENT
 ```
 import socket
 s=socket.socket()
@@ -19,7 +19,7 @@ while True:
  s.send(msg.encode())
  print("Server > ",s.recv(1024).decode())
 ```
-## SERVER
+### SERVER
 ```
 import socket
 s=socket.socket()
@@ -27,17 +27,14 @@ s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
 while True:
-ClientMessage=c.recv(1024).decode()
-c.send(ClientMessage.encode())
+ ClientMessage=c.recv(1024).decode()
+ c.send(ClientMessage.encode())
 ```
 ## OUPUT
-## CLIENT
-![image](https://github.com/KALIKIRIVAISHNAVI/3a.Sockets_Creation_for_Echo_Client_and_Echo_Server/assets/152273289/46894504-ae51-4e15-9e62-0081395b0750)
-
-## SERVER
-![image](https://github.com/KALIKIRIVAISHNAVI/3a.Sockets_Creation_for_Echo_Client_and_Echo_Server/assets/152273289/73ea9030-863a-4ca4-9cf4-f0d282500987)
-
-
+### CLIENT
+![image](https://github.com/KALIKIRIVAISHNAVI/3a.Sockets_Creation_for_Echo_Client_and_Echo_Server/assets/152273289/f688cda8-1cd1-4bb3-82b3-5fc57251a69c)
+### SERVER
+![image](https://github.com/KALIKIRIVAISHNAVI/3a.Sockets_Creation_for_Echo_Client_and_Echo_Server/assets/152273289/02f42fee-712b-4251-84f9-d249ea00b349)
 ## RESULT
 Thus, the python program for creating Echo Client and Echo Server using TCP Sockets Links 
-was successfully created and executed.
+was successfully created and executed.
